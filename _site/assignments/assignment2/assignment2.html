@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Fredric Moezinia</title>
+  </head>
+  <body>
+6.S198 Assignment 2
+name: Fredric Moezinia
+email: moezinia@mit.edu
+<p> Part 1: The classifications are almost always wrong since the network has randomized weights, and has not been
+trained yet therefore we expect the inferences to be wrong most of the time. </p>
+
+<p> With MNSIT: The test accuracy is 80% and the training accuracy is 89%.
+The demo performs 1080 inferences per second. It trains 1480 examples per second. </p>
+<p> With Fashion MNIST: The test accuracy is 73% and the training accuracy is 76%.
+The demo performs 1200 inferences per second. It trains 1250 examples per second.
+After a minute and a half of training on CIFAR, test accuracy is only 24% and trainig 42%. </p>
+<p> If we add a new FC layer to the model, the accuracy plummets and Nan% is shown. This is because
+of integer overflow, due to the exploding gradient problem where backprop repeatedly multiplies gradients by numbers
+greater than 1 so gradients grow exponentially large. This is happening since there is no activation function yet.  </p>
+
+<p> Problem 3: The accuracy is fairly low when there are 10 FC units, however when I increase this first layer to 100 units,
+  the test accuracy more than doubles from 29% to 77% after 5000 examples trained. </p>
+
+<p> Below are the training stats for models with 1 to 5 layers. The 1 layer model works far better than the others as the test accuracy
+  is substantially higher. The 3 layer model is next best, but generally the more layers the worse the accuracy of the model.
+  Perhaps this is overcomplication of the model since there end up being too many edges in the net.
+
+
+  <div> <img src="1layer.png" height="600" width="200">
+<img src="2layers.png" height="600" width="200">
+<img src="3layers.png" height="600" width="200">
+<img src="4layers.png" height="600" width="200">
+<img src="5layers.png" height="600" width="200">
+  </div>
+  <p> However, the training accuracy is never that much higher than the test accuracy which shows that it is not a problem of overfitting.
+Perhaps I did not train the models for long enough (only 5000 examples). However, after running the 3 layer model for
+  minutes, I still did not see a big discrepancy between testing and trainig accuracy (see below). </p>
+  <div> <img src="again.png" height="600" width="200"></div>
+
+  <p> With the first layer fatter (100 compared to 10), the test and trainig accuracy are high; 92/93% respectively.
+
+  </p>
+
+
+
+  </body>
+</html>
