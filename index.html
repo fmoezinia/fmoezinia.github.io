@@ -25,25 +25,34 @@
       <h3>
 <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>About Me</h3>
 
-	    I work as a software engineer on the <b>Libra</b> project at Facebook. I work on the Libra core blockchain as well as Novi's (the wallet) critical infrastructure. Before, I was a Computer Science and Economics student at <b>MIT</b>. I am primarily interested in large scale performant systems, financial technologies and distributed consensus.
+	    I work as a software engineer at Facebook on the <b>Libra</b> project. I work both on Libra Core and the Novi Wallet side of the project. Before, I was a Computer Science and Economics student at <b>MIT</b>. I am primarily interested in applying cryptographic solutions to financial projects and building scaled, performant, blockchain-based systems.
 
-<br><br> After graduating from MIT, I was a developer at <b>Cubist Systematic Strategies</b>, Point 72's propietary quant trading wing, working on low latency trade execution.
-<br><br> In the summer of 2018, I worked on Account Security at <b>Instagram</b>, creating a new way to defend IG accounts from hackers.
-<br><br> While at MIT, I did digital currency, network, security and simulation research at the <b>Media Lab</b>.
+	    critical infra, trust, auth, custody, libra custody, hsms
+	    <br><br> After graduating from MIT, I was a quant developer at <b>Point 72</b>, in their propietary systematic trading wing (Cubist Systematic Strategies), working on low latency equity trade execution.
+<br><br> In the summer of 2018, I worked on Account Security at <b>Instagram</b>, creating a new way to defend IG accounts from hackers globally.
+<br><br> While at MIT, I did digital currency, network security and simulation research at the <b>Media Lab</b>.
 
 <br><br> When I'm not staring at my computer and feeling adventurous, I hop in the nearest <b>Piper Cherokee</b> and take a few friends for a flight around the Bay Area.
 
 <br>
-
+	    
+<h3>
+<a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span class="octicon octicon-link"></span></a>Libra</h3>
+I have worked with several teams across Novi and the Libra Association.
+I helped create the HSM-based Libra Custody solution which manages all the blockchains most sensitive operations like mint + burn (patent pending).
+I work on Core Trust services like user authentication and Custody. I am involved with cryprography research, such as zero knowledge range proofs applicable to financial services on Libra.
+	    
 <h3>
 <a id="creating-pages-manually" class="anchor" href="#creating-pages-manually" aria-hidden="true"><span class="octicon octicon-link"></span></a>Personal Projects</h3>
 
+	    
 
 <center><b>Decentralized Ethereum Derivates Exchange</b></center><br>
      I created a Ethereum distributed application (dApp) to allow for decentralized Ethereum derivative trading with a friend at MIT.
-     Specifically, we created a manual order execution exchange for Ethereum Options.
+	This was the second decentralized Eth exchange created globally.<br>
+     Specifically, we created a manual order execution exchange for options trading of ETH.
      Options are trustlessly and securely held in smart contracts on the Ethereum Blockchain,
-     meaning there is no reliance on a third party. We use Oraclize to retrieve provably secure price data,
+     meaning no dependency on any third party. We use Oraclize for provably secure pricing data retrieval,
      and IPFS to reduce blockchain storage in a cryptographically secure way.
 <center><a href="https://www.youtube.com/watch?v=VW_OHJ2r4ck&feature=youtu.be">View a live Demo of the application here</a></center>
 <center><a href="https://courses.csail.mit.edu/6.857/2018/project/Moezinia-Forde-Magendanz-EthExch.pdf">Read paper here</a></center>
@@ -59,19 +68,22 @@ This was achieved by controlling users' CPUs to conduct in browser mining via a 
 
 <center><b>Cryptotrage</b></center><br>
 
-I ran a market making and taking book for 2 years, when cryptomarkets were more volatile, and had cross-exchange inefficiencies.
-I initially built a trading bot to find inefficiencies across exchanges using graph theory.
-This was challenging as assets needed to be distributed and constantly relocated across exchanges at the same time. To serioulsy profit from pricing arbitrage,
-I needed to do conduct forecasting to place the right assets on the right exchanges.
+I ran a market making and taking book for 2 years, when cryptomarkets were more volatile and had cross-exchange inefficiencies.
+I initially built an arbitrage trading bot to find inefficiencies across exchanges using a algorithm based on graph theory.
+This was challenging as assets needed to be distributed and constantly relocated across exchanges at the same time. Since rebalancing assets and preempting arbitrage windows
+	    was more complex than finding the mispricings in real-time, I had to forecast asset placement across exchanges to seriously profit from the arbitrage opportunities.
+	    It's worth noting that tested stat-arb techniques here were far less profitable than pure coin mispricings.
 <br><br> More recently, I acted as a Marker Marker in several low volume cryptocurrency markets.
-For a time, I was able to consistently find bid-ask spreads representing up to ~15% of market price. This was magntiudes more profitable than finding pricing inefficiencies.
+For a time, I was able to consistently represent bid-ask spreads representing up to ~15% of market price.
+	    I came up with an automatic market making strategy fine-tuned to specific exchanges and coins. For half a year, I was the only market maker for certain payments methods for two cryptocurrencies. 
+	    This was orders of magntiudes more profitable than collecting via arbitrage.
 
 <br><br>
 
 
 <center><b>Puma</b></center><br>
-I built an iOS application which stores your notes in the cloud, but they are all encrypted using private keys from the iOS device secure enclave.
-Login with touchID or faceID to decrypt your notes, so noone else can see them even if the storage server is hacked.
+I built an iOS application which stores your notes in the cloud encrypted using private keys from the iphone's secure enclave. (Hybrid encryption for top performance and security.)
+Login with biometrics and a passphrase to decrypt your notes, so noone else can see them even if the storage server is hacked.
 <br><br>
 
 
@@ -188,7 +200,8 @@ random peering mechanisms such as Bitcoin's.
 
 <p><center><b>Changing Places - MIT Media Lab</b> </center>
   <center><a href="http://cp.media.mit.edu/pev/">Visit the Project Site</a></center><br>
-  Our Lab’s goal is to autonomize an on-demand, shared, electric buggy transport service. This is in an effort to replace city bike schemes like Citi Cycles in New York, and revolutionize the 'last-mile' commute. I am simulating travel routes with real, public (subway) and private (Uber) transport data across cities. See an example of our protoyped buggies in Boston:
+  The research goal here was to autonomize an on-demand, shared, last mile transport service. This is in an effort to replace city bike schemes like Citi Cycles in New York or Boris Bikes in London, and revolutionize the 'last-mile' commute.
+ I simulated travel routes with real, public (subway) and private (Uber) transport data across cities. See an example of the protoyped buggies in Boston:
    <a href="https://vimeo.com/163026256">Click Here</a><br><br>
 
 
@@ -204,11 +217,6 @@ I conducted research at MIT’s Computer Science and Artificial Inteligence Labo
 <center><img src="images/robotpic.jpg" alt="Me!"style="width:420px;height:450px;"></center>
 
 
-
-
-
-
-
 <br>
 <br>
 <br>
@@ -220,21 +228,24 @@ I conducted research at MIT’s Computer Science and Artificial Inteligence Labo
 <p>
 
 <center><b>Violin</b></center> <br>
-•	Former Student of the Royal College of Music, Junior Department<br>
+•	Awarded ABRSM Diploma in Violin Performance (grade 8 Level with distinction at the age of 12)<br>
 •	Recorded for Classical Italian Radio, Israeli TV and BBC<br>
-•	ABRSM Diploma in Violin Performance, and Grade 8 Level with Distinction<br>
 •	Concert Master and Concerto Soloist of more than ten Orchestras in the UK, Italy, France and the US<br><br>
+•	Former Student of the Royal College of Music, Junior Department and music scholar<br>
 <center><img src="images/handshake.JPG" alt="Me!"style="width:400px;height:610px;"></center>
 <br>
-<center><b>Languages</b></center> <br>
-•	Spanish – Spent 6 months backpacking through Colombia, Peru, Ecuador, Panama and Spain during ‘gap’ year<br>
-•	German- received highest numerical score on German Nationwide Exam in UK.
-<br><br>
 
 <center><b>Poker</b></center><br>
 •	Placed 2nd in 3Red Trading US-wide poker tournament<br>
 •	Two time Top 10 finish in Susquehanna (SIG) MIT/Harvard tourney
 <br><br>
+	
+<center><b>Languages</b></center> <br>
+•	Spanish – Spent 6 months backpacking through Colombia, Peru, Ecuador, Panama and Spain during ‘gap’ year<br>
+•	German- received highest numerical score on German Nationwide Exam in UK.
+<br><br>
+
+
 
 
 <center><b>Football (Soccer)</b></center><br>
